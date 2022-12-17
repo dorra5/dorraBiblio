@@ -55,6 +55,6 @@ jobs:
         id: deploy-to-webapp
         with:
           app-name: 'dorraBiblio'
-          slot-name: 'Production'
+          slot-name: $dorraBiblio
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_333F541B32E24FE3BD61657C95CA1208 }}
           package: .
